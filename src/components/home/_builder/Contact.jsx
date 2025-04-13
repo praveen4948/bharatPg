@@ -14,27 +14,27 @@ const Contact = () => {
         </div>
       </div>
       <div className="container mx-auto">
-        <div className="flex justify-around">
-          <div className=" p-8 text-center w-fit bg-[#FAFAFA] rounded-xl flex flex-col shadow-xl">
+        <div className="flex justify-around flex-col md:flex-row gap-10">
+          <div className=" p-8 text-center bg-[#FAFAFA] rounded-xl flex flex-col shadow-xl w-full md:w-1/2">
             <div className="mb-8">
               <h2 className="text-2xl font-bold tracking-wider underline">Contact Us</h2>
               <p className="text-xs">We will get back to you asap!</p>
             </div>
             <form className="flex flex-col gap-5 w-full">
-              <div className="flex gap-4 w-full">
-                <div className="flex gap-2 items-center relative w-1/2">
+              <div className="flex gap-4 w-full flex-col md:flex-row">
+                <div className="flex gap-2 items-center relative w-full">
                   <UserRound height={18} width={18} className="absolute left-3 text-slate-500" />
                   <input
                     type="text"
                     placeholder="First Name"
-                    className="pr-4 pl-10 py-2 text-sm border rounded focus:outline-none focus:ring-1 focus:ring-slate-300 "
+                    className="pr-4 pl-10 py-2 text-sm border rounded focus:outline-none focus:ring-1 focus:ring-slate-300 w-full"
                   />
                 </div>
-                <div className="w-1/2">
+                <div className="flex gap-2 items-center relative w-full">
                   <input
                     type="text"
                     placeholder="Last Name"
-                    className="px-4 py-2 text-sm border rounded focus:outline-none focus:ring-1 focus:ring-slate-300"
+                    className="px-4 py-2 text-sm border rounded focus:outline-none focus:ring-1 focus:ring-slate-300 w-full"
                   />
                 </div>
               </div>
